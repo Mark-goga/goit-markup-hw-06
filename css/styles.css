@@ -197,7 +197,7 @@ img {
     background-color: #404BBF;
 }
 .section-button{
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7) , rgba(46, 47, 66, 0.7)) , url(../images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7) , rgba(46, 47, 66, 0.7)) , url(../images/bg-mob.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     /* padding-top: 188px;
@@ -206,6 +206,13 @@ img {
     padding-bottom: 72px;
     max-width: 1440px;
     background-position: center;
+}
+@media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .section-button {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-mob-2x.jpg);
+    }
 }
 .section-button-title{
     color: #FFF;
@@ -261,6 +268,7 @@ img {
     border: 1px solid  #8E8F99;
     width: 264px;
     height: 112px;
+    display: none;
     /* margin-bottom: 8px; */
 }
 .advantahes-icon {
@@ -485,7 +493,9 @@ img {
 
 .footer{
     background:  #2E2F42;
-    padding: 100px 0;
+    /* padding: 100px 0; */
+    padding-top: 98px;
+    padding-bottom: 96px;
 }
 .footer-container {
     display: flex;
@@ -498,7 +508,7 @@ img {
     /* margin-right: 120px */
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .footer-text {
     line-height: 1.5;
@@ -519,6 +529,7 @@ img {
 .logo-footer {
     display: inline-block;
     /* margin-bottom: 16px; */
+    margin: 0 auto;
     margin-bottom: 18px;
 }
 .soc-wrap {
@@ -860,6 +871,14 @@ img {
     .section-button {
         padding-top: 112px;
         padding-bottom: 112px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-tab.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx),
+        (min-resolution: 192dpi) {
+        .section-button {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-tab-2x.jpg);
+            }
     }
     .section-button-title {
         font-size: 56px; 
@@ -905,6 +924,29 @@ img {
         width: calc((100% - 24px) / 2);
 
     }
+
+/*? --------------footer----------------- */
+
+
+    .footer-container {
+        padding-left: 106px;
+        padding-right: 106px;
+        justify-content: start;
+        gap: 72px 24px;
+    }
+    .footer-container-logo {
+        flex-direction: column;
+    }
+    .logo-footer {
+        margin: 0 0 18px 0;
+    }
+    .soc-wrap {
+        flex-direction: column;
+        justify-content: start;
+    }
+    .container-form {
+        flex-direction: column;
+    }
 }
 
 /*? --------------descktop----------------- */
@@ -921,7 +963,15 @@ img {
     .section-button {
         padding-top: 188px;
         padding-bottom: 188px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-desc.jpg);
     }
+    @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx),
+        (min-resolution: 192dpi) {
+            .section-button {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-desc-2x.jpg);
+            }
+        }
     .section-button-title {
         font-size: 56px;
         line-height: 1.07;
@@ -968,6 +1018,9 @@ img {
         font-weight: 400;
         width: 264px;
     }
+    .container-ietem-icon {
+        display: flex;
+    }
 
     /*? --------------portfolio----------------- */
 
@@ -983,5 +1036,19 @@ img {
     .section-portfolio {
         padding-top: 120px;
         padding-bottom: 120px;
+    }
+
+    /*? --------------footer----------------- */
+
+    .footer {
+        padding: 100px 0;
+    }
+    .footer-container {
+            align-items: baseline;
+        gap: 0;
+    }
+    .soc-wrap {
+        margin-left: 120px;
+        margin-right: 80px;
     }
 }
